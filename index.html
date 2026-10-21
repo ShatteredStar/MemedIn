@@ -138,21 +138,14 @@
 			<main class="main-col">
 				<!-- Composer box -->
 				<div class="card composer-card">
-					<div class="composer-row">
+					<div class="composer-row" onclick="openToolModal()">
 						<div class="composer-avatar">👤</div>
 						<div class="composer-input">
 							Share your resume as a..
 						</div>
 					</div>
-					<div class="composer-actions">
-						<button
-							class="composer-btn"
-							onclick="
-								document
-									.getElementById('tool')
-									.scrollIntoView({ behavior: 'smooth' })
-							"
-						>
+					<div class="composer-actions" onclick="openToolModal()">
+						<button class="composer-btn" id="openTool">
 							<svg
 								width="18"
 								height="18"
@@ -195,7 +188,7 @@
 				<!-- Hero card -->
 				<div class="card hero-card">
 					<div class="hero-eyebrow">MEMEDIN™</div>
-					<h1>
+					<h1 id="bigTitle">
 						Nobody reads your resume anyways.<br />Just send a meme
 						instead.
 					</h1>
@@ -213,14 +206,7 @@
 					</p>
 
 					<div class="hero-actions">
-						<button
-							class="btn-filled"
-							onclick="
-								document
-									.getElementById('tool')
-									.scrollIntoView({ behavior: 'smooth' })
-							"
-						>
+						<button class="btn-filled" onclick="openToolModal()">
 							Get Started — It's Free*
 						</button>
 						<button
@@ -468,35 +454,31 @@
 
 				<div class="card post-card">
 					<div class="post-header">
-						<div class="post-avatar">JB</div>
+						<div class="post-avatar">SA</div>
 						<div class="post-meta">
 							<div class="post-name">
-								Jeff Bozos
+								Scam Altman
 								<span class="degree">• 1st</span>
 							</div>
 							<div class="post-title-line">
-								Executive Chair & Founder at Amazing · Founder
-								at Blue Origin
+								CEO at OpenAI · PC Crisis Enthusiast · RAM
+								Hoarder
 							</div>
 							<div class="post-time">3d · 🌐</div>
 						</div>
 						<button class="follow-btn">+ Follow</button>
 					</div>
 					<div class="post-body">
-						At Amazing, we outlawed PowerPoint decks years ago
-						because paragraphs take too long. Today, I’m outlawing
-						traditional 2-page PDFs.<br /><br />
+						I just raised another $100 billion to train a neural net
+						that reads resumes. Turned out a simple meme wrapper
+						gets the same performance at 0.0001% of the compute
+						cost.<br /><br />
 
-						If your career history can’t be compressed into a single
-						high-converting meme, you lack customer obsession and
-						operational efficiency. I don't want a narrative—I want
-						a sub-pixel SVG payload that lands in my inbox in under
-						2 seconds via Prime Same-Day Delivery.<br /><br />
-
-						Focus on the inputs, embed the metadata, and stay
-						relentless. It is still Day 1. 📦🚀<br /><br />
+						We are accelerating the transition toward AGI-ready,
+						meme-encoded job applications. It’s hard to overstate
+						how important this is for the future of humanity.<br /><br />
 						<span class="hashtag"
-							>#OperationalExcellence #Day1Mindset #MemeEfficiency
+							>#ScalingLaw #AGINear #ComputeIsAllYouNeed
 						</span>
 					</div>
 					<div class="post-reactions">
@@ -555,21 +537,86 @@
 						<button class="post-action-btn">📤 Send</button>
 					</div>
 				</div>
+			</main>
 
-				<!-- TOOL -->
-				<div class="card tool-card" id="tool">
+			<!-- RIGHT RAIL -->
+			<aside class="right-rail">
+				<div class="card premium-card">
+					<div class="premium-banner">🥷</div>
+					<div class="premium-title">MemedIn Premium™</div>
+					<p class="premium-desc">
+						Synergize your career with AI-powered memetic
+						intelligence. Our machine learning algorithms utilize
+						neural networks to optimize your resume's
+						quantum-encrypted metadata across decentralized meme
+						infrastructure. Web3-ready. Patent-pending technology
+						that definitely exists.
+					</p>
+					<button class="btn-outline full-width">
+						Try Premium — Free*
+					</button>
+				</div>
+
+				<div class="card feed-card">
+					<div class="feed-title">Add to your feed</div>
+
+					<div class="feed-item">
+						<div class="feed-avatar">🧑‍💻</div>
+						<div class="feed-info">
+							<div class="feed-name">Steve Minecraft</div>
+							<div class="feed-sub">
+								I build houses and mine caves fast | …
+							</div>
+							<button class="follow-btn-outline">+ Follow</button>
+						</div>
+					</div>
+
+					<div class="feed-item">
+						<div class="feed-avatar">🏢</div>
+						<div class="feed-info">
+							<div class="feed-name">Evil Corp</div>
+							<div class="feed-sub">
+								Company · IT System Data Services
+							</div>
+							<button class="follow-btn-outline">+ Follow</button>
+						</div>
+					</div>
+
+					<div class="feed-item">
+						<div class="feed-avatar">👩‍⚕️</div>
+						<div class="feed-info">
+							<div class="feed-name">My Therapist, MT, …</div>
+							<div class="feed-sub">
+								Psychologist · Chief Traumatologist · GC…
+							</div>
+							<button class="follow-btn-outline">+ Follow</button>
+						</div>
+					</div>
+				</div>
+			</aside>
+		</div>
+
+		<!-- MODAL -->
+		<div class="modal" id="tool-modal">
+			<div class="modal-overlay" onclick="closeToolModal()"></div>
+			<div class="modal-content">
+				<button class="modal-close" onclick="closeToolModal()">
+					✕
+				</button>
+
+				<div class="modal-tool">
 					<div class="tool-title">Okay, Here's the Actual Tool.</div>
 					<div class="tool-sub">
-						Encode: hide your resume PDF inside any image. Decode:
-						extract a resume from an encoded PNG.
+						Embed: hide your resume PDF inside any image. Reveal:
+						extract a resume from an embedded PNG.
 					</div>
 
 					<div class="tabs">
 						<button class="tab-btn active" data-tab="encode">
-							Encode
+							Embed
 						</button>
 						<button class="tab-btn" data-tab="decode">
-							Decode
+							Reveal
 						</button>
 					</div>
 
@@ -640,9 +687,10 @@
 								id="input-decode"
 							/>
 							<div class="upload-label">
-								<div class="upload-title">Encoded image</div>
+								<div class="upload-title">Embedded image</div>
 								<div class="upload-hint" id="hint-decode">
-									Must be the exact PNG from the encoder
+									Must be the exact PNG that hasn't been
+									compressed
 								</div>
 							</div>
 						</div>
@@ -658,380 +706,10 @@
 						<div class="status" id="dec-status"></div>
 					</div>
 				</div>
-			</main>
-
-			<!-- RIGHT RAIL -->
-			<aside class="right-rail">
-				<div class="card premium-card">
-					<div class="premium-banner">🥷</div>
-					<div class="premium-title">MemedIn Premium™</div>
-					<p class="premium-desc">
-						Synergize your career with AI-powered memetic
-						intelligence. Our machine learning algorithms utilize
-						neural networks to optimize your resume's
-						quantum-encrypted metadata across decentralized meme
-						infrastructure. Web3-ready. Patent-pending technology
-						that definitely exists.
-					</p>
-					<button class="btn-outline full-width">
-						Try Premium — Free*
-					</button>
-				</div>
-
-				<div class="card feed-card">
-					<div class="feed-title">Add to your feed</div>
-
-					<div class="feed-item">
-						<div class="feed-avatar">🧑‍💻</div>
-						<div class="feed-info">
-							<div class="feed-name">Steve Huynh</div>
-							<div class="feed-sub">
-								I Help Tech Professionals Level Up Fast | …
-							</div>
-							<button class="follow-btn-outline">+ Follow</button>
-						</div>
-					</div>
-
-					<div class="feed-item">
-						<div class="feed-avatar">🏢</div>
-						<div class="feed-info">
-							<div class="feed-name">Cognifyz Technologies</div>
-							<div class="feed-sub">
-								Company · IT System Data Services
-							</div>
-							<button class="follow-btn-outline">+ Follow</button>
-						</div>
-					</div>
-
-					<div class="feed-item">
-						<div class="feed-avatar">👩‍⚕️</div>
-						<div class="feed-info">
-							<div class="feed-name">
-								Charlene Lacas RPsy, MT, …
-							</div>
-							<div class="feed-sub">
-								Psychologist · Chief Traumatologist · GC…
-							</div>
-							<button class="follow-btn-outline">+ Follow</button>
-						</div>
-					</div>
-				</div>
-			</aside>
+			</div>
 		</div>
-
-		<script>
-			// Scrolling word animation
-			(function () {
-				const words = Array.from(
-					document.querySelectorAll(".scroll-word"),
-				);
-				let current = 0;
-				function showWord(idx) {
-					words.forEach((w, i) =>
-						w.classList.toggle("visible", i === idx),
-					);
-				}
-				showWord(0);
-				setInterval(() => {
-					words[current].classList.remove("visible");
-					current = (current + 1) % words.length;
-					setTimeout(() => showWord(current), 50);
-				}, 2000);
-			})();
-
-			// Tabs
-			document.querySelectorAll(".tab-btn").forEach((btn) => {
-				btn.addEventListener("click", () => {
-					document
-						.querySelectorAll(".tab-btn")
-						.forEach((b) => b.classList.remove("active"));
-					document
-						.querySelectorAll(".panel")
-						.forEach((p) => p.classList.remove("active"));
-					btn.classList.add("active");
-					document
-						.getElementById("panel-" + btn.dataset.tab)
-						.classList.add("active");
-				});
-			});
-
-			// File handling + capacity check
-			const MAGIC = [0x52, 0x4d, 0x45, 0x4d];
-			const HEADER_BYTES = 8;
-			function fmt(n) {
-				if (n < 1024) return n + " B";
-				if (n < 1048576) return (n / 1024).toFixed(1) + " KB";
-				return (n / 1048576).toFixed(2) + " MB";
-			}
-
-			let imageFile = null,
-				pdfFile = null;
-
-			function updateCapacity() {
-				const cap = document.getElementById("capacity-display");
-				if (!imageFile) {
-					cap.style.display = "none";
-					return;
-				}
-				cap.style.display = "block";
-				const img = new Image();
-				img.onload = () => {
-					const av =
-						Math.floor((img.width * img.height * 3) / 8) -
-						HEADER_BYTES;
-					document.getElementById("cap-value").textContent = fmt(av);
-					URL.revokeObjectURL(img.src);
-				};
-				img.src = URL.createObjectURL(imageFile);
-			}
-
-			function checkReady() {
-				document.getElementById("btn-encode").disabled = !(
-					imageFile && pdfFile
-				);
-			}
-
-			document
-				.getElementById("input-image")
-				.addEventListener("change", (e) => {
-					const f = e.target.files[0];
-					if (!f) return;
-					imageFile = f;
-					document
-						.getElementById("zone-image")
-						.classList.add("has-file");
-					document.getElementById("hint-image").textContent = f.name;
-					updateCapacity();
-					checkReady();
-				});
-
-			document
-				.getElementById("input-pdf")
-				.addEventListener("change", (e) => {
-					const f = e.target.files[0];
-					if (!f) return;
-					pdfFile = f;
-					document
-						.getElementById("zone-pdf")
-						.classList.add("has-file");
-					document.getElementById("hint-pdf").textContent = f.name;
-					updateCapacity();
-					checkReady();
-				});
-
-			document
-				.getElementById("btn-encode")
-				.addEventListener("click", async () => {
-					const status = document.getElementById("enc-status");
-					const result = document.getElementById("enc-result");
-					const pw = document.getElementById("enc-progress-wrap");
-					const pb = document.getElementById("enc-progress-bar");
-					result.classList.remove("visible");
-					pb.style.width = "0%";
-					pw.classList.add("visible");
-					status.className = "status info";
-					status.textContent = "Reading files…";
-					document.getElementById("btn-encode").disabled = true;
-
-					try {
-						const pdfBytes = new Uint8Array(
-							await pdfFile.arrayBuffer(),
-						);
-						const header = new Uint8Array(HEADER_BYTES);
-						header[0] = MAGIC[0];
-						header[1] = MAGIC[1];
-						header[2] = MAGIC[2];
-						header[3] = MAGIC[3];
-						const len = pdfBytes.length;
-						header[4] = (len >> 24) & 0xff;
-						header[5] = (len >> 16) & 0xff;
-						header[6] = (len >> 8) & 0xff;
-						header[7] = len & 0xff;
-						const payload = new Uint8Array(HEADER_BYTES + len);
-						payload.set(header, 0);
-						payload.set(pdfBytes, HEADER_BYTES);
-
-						const img = await new Promise((res, rej) => {
-							const i = new Image();
-							i.onload = () => res(i);
-							i.onerror = () =>
-								rej(new Error("Could not load image"));
-							i.src = URL.createObjectURL(imageFile);
-						});
-
-						const canvas = document.createElement("canvas");
-						canvas.width = img.width;
-						canvas.height = img.height;
-						const ctx = canvas.getContext("2d");
-						ctx.drawImage(img, 0, 0);
-						URL.revokeObjectURL(img.src);
-						const imageData = ctx.getImageData(
-							0,
-							0,
-							canvas.width,
-							canvas.height,
-						);
-						const pixels = imageData.data;
-						const avBits = Math.floor((pixels.length / 4) * 3);
-						if (payload.length * 8 > avBits)
-							throw new Error("Image too small for this PDF.");
-
-						status.textContent = "Embedding…";
-						pb.style.width = "40%";
-						await new Promise((r) => setTimeout(r, 0));
-
-						let bi = 0,
-							pp = 0;
-						const tb = payload.length * 8;
-						while (bi < tb) {
-							while (pp % 4 === 3) pp++;
-							const byte = Math.floor(bi / 8),
-								bit = 7 - (bi % 8);
-							pixels[pp] =
-								(pixels[pp] & 0xfe) |
-								((payload[byte] >> bit) & 1);
-							bi++;
-							pp++;
-						}
-
-						pb.style.width = "90%";
-						ctx.putImageData(imageData, 0, 0);
-						const dataURL = canvas.toDataURL("image/png");
-						pb.style.width = "100%";
-						document.getElementById("enc-output-img").src = dataURL;
-						document.getElementById("btn-download-enc").onclick =
-							() => {
-								const a = document.createElement("a");
-								a.href = dataURL;
-								a.download = "resume-meme.png";
-								a.click();
-							};
-						result.classList.add("visible");
-						status.className = "status success";
-						status.textContent =
-							"Done. Save as PNG — never recompress.";
-					} catch (err) {
-						status.className = "status error";
-						status.textContent = err.message;
-						pw.classList.remove("visible");
-					} finally {
-						document.getElementById("btn-encode").disabled = false;
-					}
-				});
-
-			let decodeFile = null;
-			document
-				.getElementById("input-decode")
-				.addEventListener("change", (e) => {
-					const f = e.target.files[0];
-					if (!f) return;
-					decodeFile = f;
-					document
-						.getElementById("zone-decode")
-						.classList.add("has-file");
-					document.getElementById("hint-decode").textContent = f.name;
-					document.getElementById("btn-decode").disabled = false;
-				});
-
-			document
-				.getElementById("btn-decode")
-				.addEventListener("click", async () => {
-					const status = document.getElementById("dec-status");
-					const pw = document.getElementById("dec-progress-wrap");
-					const pb = document.getElementById("dec-progress-bar");
-					pb.style.width = "0%";
-					pw.classList.add("visible");
-					status.className = "status info";
-					status.textContent = "Loading image…";
-					document.getElementById("btn-decode").disabled = true;
-
-					try {
-						const img = await new Promise((res, rej) => {
-							const i = new Image();
-							i.onload = () => res(i);
-							i.onerror = () =>
-								rej(new Error("Could not load image"));
-							i.src = URL.createObjectURL(decodeFile);
-						});
-						const canvas = document.createElement("canvas");
-						canvas.width = img.width;
-						canvas.height = img.height;
-						const ctx = canvas.getContext("2d");
-						ctx.drawImage(img, 0, 0);
-						URL.revokeObjectURL(img.src);
-						const pixels = ctx.getImageData(
-							0,
-							0,
-							canvas.width,
-							canvas.height,
-						).data;
-
-						pb.style.width = "30%";
-
-						function extractBytes(pd, byteOffset, count) {
-							const out = new Uint8Array(count);
-							for (let i = 0; i < count; i++) {
-								let byte = 0;
-								for (let b = 0; b < 8; b++) {
-									const gb = (byteOffset + i) * 8 + b,
-										p = Math.floor(gb / 3),
-										ch = gb % 3;
-									byte = (byte << 1) | (pd[p * 4 + ch] & 1);
-								}
-								out[i] = byte;
-							}
-							return out;
-						}
-
-						const header = extractBytes(pixels, 0, HEADER_BYTES);
-						const magic = String.fromCharCode(
-							header[0],
-							header[1],
-							header[2],
-							header[3],
-						);
-						if (magic !== "RMEM")
-							throw new Error("No resume found in this image.");
-						const length =
-							(header[4] << 24) |
-							(header[5] << 16) |
-							(header[6] << 8) |
-							header[7];
-						if (length <= 0 || length > 50 * 1024 * 1024)
-							throw new Error("Corrupted header.");
-
-						pb.style.width = "60%";
-						const pdfBytes = extractBytes(
-							pixels,
-							HEADER_BYTES,
-							length,
-						);
-						pb.style.width = "100%";
-
-						if (pdfBytes[0] !== 0x25 || pdfBytes[1] !== 0x50)
-							throw new Error(
-								"Extracted data is not a valid PDF.",
-							);
-
-						const blob = new Blob([pdfBytes], {
-							type: "application/pdf",
-						});
-						const url = URL.createObjectURL(blob);
-						const a = document.createElement("a");
-						a.href = url;
-						a.download = "extracted-resume.pdf";
-						a.click();
-						setTimeout(() => URL.revokeObjectURL(url), 10000);
-						status.className = "status success";
-						status.textContent = "Resume extracted successfully.";
-					} catch (err) {
-						status.className = "status error";
-						status.textContent = err.message;
-						pw.classList.remove("visible");
-					} finally {
-						document.getElementById("btn-decode").disabled = false;
-					}
-				});
-		</script>
 	</body>
+
+	<script src="/script.js"></script>
+	<script src="/embedder.js"></script>
 </html>
