@@ -1,0 +1,1037 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>MemedIn™</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- NAV -->
+		<nav class="navbar">
+			<div class="nav-inner">
+				<div class="logo">Memed<span class="logo-badge">in</span></div>
+
+				<div class="nav-links">
+					<a href="/#" class="nav-item active">
+						<svg
+							width="22"
+							height="22"
+							viewBox="0 0 24 24"
+							fill="currentColor"
+						>
+							<path
+								d="M23 9v2h-2V7a1 1 0 00-.29-.71l-4-4a1 1 0 00-.71-.29H5a1 1 0 00-1 1v14a1 1 0 001 1h5v-5h4v5h5a1 1 0 001-1v-4h2v-2l-2-2V9h2zm-9 4H10v-2h4v2z"
+							/>
+						</svg>
+						<span>Home</span>
+					</a>
+					<a href="/#" class="nav-item">
+						<svg
+							width="22"
+							height="22"
+							viewBox="0 0 24 24"
+							fill="currentColor"
+						>
+							<path
+								d="M12 16a4 4 0 100-8 4 4 0 000 8zm0 2a6 6 0 110-12 6 6 0 010 12zm-7-1H2v-2h3v2zm16 0h-3v-2h3v2zM11 2h2v3h-2V2zm0 17h2v3h-2v-3z"
+							/>
+						</svg>
+						<span>My Network</span>
+					</a>
+					<a href="/#" class="nav-item">
+						<svg
+							width="22"
+							height="22"
+							viewBox="0 0 24 24"
+							fill="currentColor"
+						>
+							<path
+								d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zM9 17H7v-5h2v5zm4 0h-2V7h2v10zm4 0h-2v-3h2v3z"
+							/>
+						</svg>
+						<span>Jobs</span>
+					</a>
+				</div>
+
+				<div class="nav-right">
+					<a href="/#" class="premium-nav-link">
+						<span class="premium-icon">◆</span> Try Premium for ₱0
+					</a>
+				</div>
+			</div>
+		</nav>
+
+		<!-- PAGE BODY -->
+		<div class="page-body">
+			<!-- LEFT SIDEBAR -->
+			<aside class="left-sidebar">
+				<nav class="sidebar-nav">
+					<a href="/#" class="sidebar-item active">
+						<svg
+							width="18"
+							height="18"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+						>
+							<line x1="3" y1="6" x2="21" y2="6" />
+							<line x1="3" y1="12" x2="21" y2="12" />
+							<line x1="3" y1="18" x2="21" y2="18" />
+						</svg>
+						Testimonials
+					</a>
+					<a href="/#" class="sidebar-item">
+						<svg
+							width="18"
+							height="18"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+						>
+							<circle cx="12" cy="12" r="10" />
+							<polyline points="12 6 12 12 16 14" />
+						</svg>
+						My Activity
+					</a>
+					<a href="#tool" class="sidebar-item">
+						<svg
+							width="18"
+							height="18"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+						>
+							<rect x="2" y="3" width="20" height="14" rx="2" />
+							<line x1="8" y1="21" x2="16" y2="21" />
+							<line x1="12" y1="17" x2="12" y2="21" />
+						</svg>
+						Embed Resume
+					</a>
+					<a href="#tool" class="sidebar-item">
+						<svg
+							width="18"
+							height="18"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+						>
+							<path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+							<polyline points="7 10 12 15 17 10" />
+							<line x1="12" y1="15" x2="12" y2="3" />
+						</svg>
+						Reveal Resume
+					</a>
+				</nav>
+			</aside>
+
+			<!-- MAIN FEED -->
+			<main class="main-col">
+				<!-- Composer box -->
+				<div class="card composer-card">
+					<div class="composer-row">
+						<div class="composer-avatar">👤</div>
+						<div class="composer-input">
+							Share your resume as a..
+						</div>
+					</div>
+					<div class="composer-actions">
+						<button
+							class="composer-btn"
+							onclick="
+								document
+									.getElementById('tool')
+									.scrollIntoView({ behavior: 'smooth' })
+							"
+						>
+							<svg
+								width="18"
+								height="18"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="#378FE9"
+								stroke-width="2"
+							>
+								<rect
+									x="3"
+									y="3"
+									width="18"
+									height="18"
+									rx="2"
+								></rect>
+								<circle cx="8.5" cy="8.5" r="1.5"></circle>
+								<polyline points="21 15 16 10 5 21"></polyline>
+							</svg>
+							Meme
+						</button>
+						<button class="composer-btn">
+							<svg
+								width="18"
+								height="18"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="#5F9B41"
+								stroke-width="2"
+							>
+								<path d="M11 5L6 9H2v6h4l5 4V5z" />
+								<path
+									d="M19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07"
+								/>
+							</svg>
+							Roast
+						</button>
+					</div>
+				</div>
+
+				<!-- Hero card -->
+				<div class="card hero-card">
+					<div class="hero-eyebrow">MEMEDIN™</div>
+					<h1>
+						Nobody reads your resume anyways.<br />Just send a meme
+						instead.
+					</h1>
+					<p class="hero-sub">
+						We didn't reinvent the wheel. We vibe coded it.
+					</p>
+
+					<p class="hero-prompt">
+						Need to submit a resume? Instead, pass a
+						<span class="scroll-word-wrap" id="word-wrap">
+							<span class="scroll-word">meme</span>
+							<span class="scroll-word">selfie</span>
+							<span class="scroll-word">screenshot</span>
+						</span>
+					</p>
+
+					<div class="hero-actions">
+						<button
+							class="btn-filled"
+							onclick="
+								document
+									.getElementById('tool')
+									.scrollIntoView({ behavior: 'smooth' })
+							"
+						>
+							Get Started — It's Free*
+						</button>
+						<button
+							class="btn-outline"
+							onclick="
+								document
+									.getElementById('testimonials')
+									.scrollIntoView({ behavior: 'smooth' })
+							"
+						>
+							See testimonials
+						</button>
+					</div>
+
+					<div class="stats-row">
+						<div class="stat-cell">
+							<div class="stat-num">98.7%</div>
+							<div class="stat-label">
+								Interview rate™<br />(unverified)
+							</div>
+						</div>
+						<div class="stat-cell">
+							<div class="stat-num">47M+</div>
+							<div class="stat-label">
+								Professionals<br />helped
+							</div>
+						</div>
+						<div class="stat-cell">
+							<div class="stat-num">#1</div>
+							<div class="stat-label">
+								AI Resume builder (based on ChatGPT)
+							</div>
+						</div>
+						<div class="stat-cell">
+							<div class="stat-num">∞</div>
+							<div class="stat-label">
+								Synergies<br />unlocked
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Section header -->
+				<div class="card section-header-card" id="testimonials">
+					<h2>What industry leaders are saying</h2>
+					<p>
+						Real quotes from real people that we definitely received
+						in writing. Verified by Larry (an AI).
+					</p>
+				</div>
+
+				<!-- Testimonial posts -->
+				<div class="card post-card">
+					<div class="post-header">
+						<div class="post-avatar">JS</div>
+						<div class="post-meta">
+							<div class="post-name">
+								Johnny Sins <span class="degree">• 1st</span>
+							</div>
+							<div class="post-title-line">
+								Multi-Industry Professional · Doctor · Lawyer ·
+								Plumber
+							</div>
+							<div class="post-time">6d · 🌐</div>
+						</div>
+						<button class="follow-btn">+ Follow</button>
+					</div>
+					<div class="post-body">
+						I’ve come from behind in countless industries, but no
+						matter how hard the job gets, you always need to lay
+						down a solid foundation.<br /><br />
+
+						A strong resume is key—it ensures you satisfy every
+						client and always come out on top.<br /><br />
+
+						<span class="hashtag"
+							>#DeepExperience #HardWorker #AlwaysComing</span
+						>
+					</div>
+					<div class="post-reactions">
+						<span>👍😂🎉 Johnny Sins and 9,999,999 others</span>
+						<span>420,069 comments · 69,420 reposts</span>
+					</div>
+					<div class="post-actions">
+						<button class="post-action-btn">👍 Like</button>
+						<button class="post-action-btn">💬 Comment</button>
+						<button class="post-action-btn">🔁 Repost</button>
+						<button class="post-action-btn">📤 Send</button>
+					</div>
+				</div>
+
+				<div class="card post-card">
+					<div class="post-header">
+						<div class="post-avatar">RB</div>
+						<div class="post-meta">
+							<div class="post-name">
+								Rene Baterbonia<span class="degree">
+									• 1st</span
+								>
+							</div>
+							<div class="post-title-line">
+								Influencer · Public Figure · Lore Subject ·
+								Patron Saint of Content
+							</div>
+							<div class="post-time">9d · 🌐</div>
+						</div>
+						<button class="follow-btn">+ Follow</button>
+					</div>
+					<div class="post-body">
+						MAMAAAAAAAAAAAAAAAA<br /><br />
+
+						<span class="hashtag"
+							>#JustAKidWithABigResume #Monetized
+							#CanonEvent</span
+						>
+					</div>
+					<div class="post-reactions">
+						<span>👍😂🎉 Johnny Sins and 9,999,999 others</span>
+						<span>420,069 comments · 69,420 reposts</span>
+					</div>
+					<div class="post-actions">
+						<button class="post-action-btn">👍 Like</button>
+						<button class="post-action-btn">💬 Comment</button>
+						<button class="post-action-btn">🔁 Repost</button>
+						<button class="post-action-btn">📤 Send</button>
+					</div>
+				</div>
+
+				<div class="card post-card">
+					<div class="post-header">
+						<div class="post-avatar">JM</div>
+						<div class="post-meta">
+							<div class="post-name">
+								Josh Mojico<span class="degree"> • 1st</span>
+							</div>
+							<div class="post-title-line">
+								CEO & Founder at Pechay Chips Original · Mindset
+								Guru · Diskarte Master
+							</div>
+							<div class="post-time">9d · 🌐</div>
+						</div>
+						<button class="follow-btn">+ Follow</button>
+					</div>
+					<div class="post-body">
+						It’s all about the mindset. You don't need 10 years of
+						corporate experience—you just need grit, diskarte, and a
+						resume that makes you look like a CEO before you even
+						turn 20.<br /><br />
+
+						If your CV isn't as crunchy as my Pechay Chips, you're
+						already behind.<br /><br />
+
+						<span class="hashtag"
+							>#DiskarteOverDiploma #PechayMindset #YoungCEO
+							#LevelUp</span
+						>
+					</div>
+					<div class="post-reactions">
+						<span>👍😂🎉 Johnny Sins and 9,999,999 others</span>
+						<span>420,069 comments · 69,420 reposts</span>
+					</div>
+					<div class="post-actions">
+						<button class="post-action-btn">👍 Like</button>
+						<button class="post-action-btn">💬 Comment</button>
+						<button class="post-action-btn">🔁 Repost</button>
+						<button class="post-action-btn">📤 Send</button>
+					</div>
+				</div>
+
+				<div class="card post-card">
+					<div class="post-header">
+						<div class="post-avatar">EM</div>
+						<div class="post-meta">
+							<div class="post-name">
+								Elongated Musk <span class="degree">• 1st</span>
+							</div>
+							<div class="post-title-line">
+								CEO of Several Things He Bought · Owner, Mars
+								(planet)
+							</div>
+							<div class="post-time">3d · 🌐</div>
+						</div>
+						<button class="follow-btn">+ Follow</button>
+					</div>
+					<div class="post-body">
+						If your resume isn't efficient enough to fit inside a
+						Doge meme, you're not coming to Mars.<br /><br />
+
+						Submitting your application as a compressed PNG is
+						mathematically optimal. Big if true. 🚀<br /><br />
+						<span class="hashtag"
+							>#OccupyMars #MemeRecruiting #Sub4MinResume
+						</span>
+					</div>
+					<div class="post-reactions">
+						<span>👍🚀💡 Elongated Musk and 892,441 others</span>
+						<span>14,002 comments · 221 reposts</span>
+					</div>
+					<div class="post-actions">
+						<button class="post-action-btn">👍 Like</button>
+						<button class="post-action-btn">💬 Comment</button>
+						<button class="post-action-btn">🔁 Repost</button>
+						<button class="post-action-btn">📤 Send</button>
+					</div>
+				</div>
+
+				<div class="card post-card">
+					<div class="post-header">
+						<div class="post-avatar">MS</div>
+						<div class="post-meta">
+							<div class="post-name">
+								Mark Suckersberg
+								<span class="degree">• 1st</span>
+							</div>
+							<div class="post-title-line">
+								Human · Metaverse Enthusiast · Person
+							</div>
+							<div class="post-time">3d · 🌐</div>
+						</div>
+						<button class="follow-btn">+ Follow</button>
+					</div>
+					<div class="post-body">
+						Hello. I am a human person who experiences human
+						emotions.<br /><br />
+
+						I used this product and it was satisfactory.<br /><br />
+
+						I have updated my LinkedIn. I am smiling now. This is
+						what smiling looks like.<br /><br />
+						<span class="hashtag"
+							>#Connection #Growth #HumanEmotions
+						</span>
+					</div>
+					<div class="post-reactions">
+						<span>👍🚀💡 Elongated Musk and 892,441 others</span>
+						<span>14,002 comments · 221 reposts</span>
+					</div>
+					<div class="post-actions">
+						<button class="post-action-btn">👍 Like</button>
+						<button class="post-action-btn">💬 Comment</button>
+						<button class="post-action-btn">🔁 Repost</button>
+						<button class="post-action-btn">📤 Send</button>
+					</div>
+				</div>
+
+				<div class="card post-card">
+					<div class="post-header">
+						<div class="post-avatar">JB</div>
+						<div class="post-meta">
+							<div class="post-name">
+								Jeff Bozos
+								<span class="degree">• 1st</span>
+							</div>
+							<div class="post-title-line">
+								Executive Chair & Founder at Amazing · Founder
+								at Blue Origin
+							</div>
+							<div class="post-time">3d · 🌐</div>
+						</div>
+						<button class="follow-btn">+ Follow</button>
+					</div>
+					<div class="post-body">
+						At Amazing, we outlawed PowerPoint decks years ago
+						because paragraphs take too long. Today, I’m outlawing
+						traditional 2-page PDFs.<br /><br />
+
+						If your career history can’t be compressed into a single
+						high-converting meme, you lack customer obsession and
+						operational efficiency. I don't want a narrative—I want
+						a sub-pixel SVG payload that lands in my inbox in under
+						2 seconds via Prime Same-Day Delivery.<br /><br />
+
+						Focus on the inputs, embed the metadata, and stay
+						relentless. It is still Day 1. 📦🚀<br /><br />
+						<span class="hashtag"
+							>#OperationalExcellence #Day1Mindset #MemeEfficiency
+						</span>
+					</div>
+					<div class="post-reactions">
+						<span>👍🚀💡 Elongated Musk and 892,441 others</span>
+						<span>14,002 comments · 221 reposts</span>
+					</div>
+					<div class="post-actions">
+						<button class="post-action-btn">👍 Like</button>
+						<button class="post-action-btn">💬 Comment</button>
+						<button class="post-action-btn">🔁 Repost</button>
+						<button class="post-action-btn">📤 Send</button>
+					</div>
+				</div>
+
+				<div class="card post-card">
+					<div class="post-header">
+						<div class="post-avatar">JB</div>
+						<div class="post-meta">
+							<div class="post-name">
+								Jeff Bozos
+								<span class="degree">• 1st</span>
+							</div>
+							<div class="post-title-line">
+								Executive Chair & Founder at Amazing · Founder
+								at Blue Origin
+							</div>
+							<div class="post-time">3d · 🌐</div>
+						</div>
+						<button class="follow-btn">+ Follow</button>
+					</div>
+					<div class="post-body">
+						At Amazing, we outlawed PowerPoint decks years ago
+						because paragraphs take too long. Today, I’m outlawing
+						traditional 2-page PDFs.<br /><br />
+
+						If your career history can’t be compressed into a single
+						high-converting meme, you lack customer obsession and
+						operational efficiency. I don't want a narrative—I want
+						a sub-pixel SVG payload that lands in my inbox in under
+						2 seconds via Prime Same-Day Delivery.<br /><br />
+
+						Focus on the inputs, embed the metadata, and stay
+						relentless. It is still Day 1. 📦🚀<br /><br />
+						<span class="hashtag"
+							>#OperationalExcellence #Day1Mindset #MemeEfficiency
+						</span>
+					</div>
+					<div class="post-reactions">
+						<span>👍🚀💡 Elongated Musk and 892,441 others</span>
+						<span>14,002 comments · 221 reposts</span>
+					</div>
+					<div class="post-actions">
+						<button class="post-action-btn">👍 Like</button>
+						<button class="post-action-btn">💬 Comment</button>
+						<button class="post-action-btn">🔁 Repost</button>
+						<button class="post-action-btn">📤 Send</button>
+					</div>
+				</div>
+
+				<!-- TOOL -->
+				<div class="card tool-card" id="tool">
+					<div class="tool-title">Okay, Here's the Actual Tool.</div>
+					<div class="tool-sub">
+						Encode: hide your resume PDF inside any image. Decode:
+						extract a resume from an encoded PNG.
+					</div>
+
+					<div class="tabs">
+						<button class="tab-btn active" data-tab="encode">
+							Encode
+						</button>
+						<button class="tab-btn" data-tab="decode">
+							Decode
+						</button>
+					</div>
+
+					<div class="panel active" id="panel-encode">
+						<div class="upload-row">
+							<div class="upload-zone" id="zone-image">
+								<input
+									type="file"
+									accept="image/png,image/jpeg,image/webp"
+									id="input-image"
+								/>
+								<div class="upload-label">
+									<div class="upload-title">Cover image</div>
+									<div class="upload-hint" id="hint-image">
+										PNG, JPG, WEBP
+									</div>
+								</div>
+							</div>
+							<div class="upload-zone" id="zone-pdf">
+								<input
+									type="file"
+									accept="application/pdf"
+									id="input-pdf"
+								/>
+								<div class="upload-label">
+									<div class="upload-title">Resume PDF</div>
+									<div class="upload-hint" id="hint-pdf">
+										Any PDF
+									</div>
+								</div>
+							</div>
+						</div>
+						<div
+							class="capacity"
+							id="capacity-display"
+							style="display: none"
+						>
+							Image capacity: <span id="cap-value">—</span>
+						</div>
+						<button class="btn-action" id="btn-encode" disabled>
+							Hide Resume in Image
+						</button>
+						<div class="progress-wrap" id="enc-progress-wrap">
+							<div
+								class="progress-bar"
+								id="enc-progress-bar"
+							></div>
+						</div>
+						<div class="status" id="enc-status"></div>
+						<div class="result" id="enc-result">
+							<div class="result-label">Output — save as PNG</div>
+							<img
+								id="enc-output-img"
+								src=""
+								alt="Encoded output"
+							/>
+							<button class="btn-download" id="btn-download-enc">
+								Save Image
+							</button>
+						</div>
+					</div>
+
+					<div class="panel" id="panel-decode">
+						<div class="upload-zone" id="zone-decode">
+							<input
+								type="file"
+								accept="image/png"
+								id="input-decode"
+							/>
+							<div class="upload-label">
+								<div class="upload-title">Encoded image</div>
+								<div class="upload-hint" id="hint-decode">
+									Must be the exact PNG from the encoder
+								</div>
+							</div>
+						</div>
+						<button class="btn-action" id="btn-decode" disabled>
+							Extract Resume
+						</button>
+						<div class="progress-wrap" id="dec-progress-wrap">
+							<div
+								class="progress-bar"
+								id="dec-progress-bar"
+							></div>
+						</div>
+						<div class="status" id="dec-status"></div>
+					</div>
+				</div>
+			</main>
+
+			<!-- RIGHT RAIL -->
+			<aside class="right-rail">
+				<div class="card premium-card">
+					<div class="premium-banner">🥷</div>
+					<div class="premium-title">MemedIn Premium™</div>
+					<p class="premium-desc">
+						Synergize your career with AI-powered memetic
+						intelligence. Our machine learning algorithms utilize
+						neural networks to optimize your resume's
+						quantum-encrypted metadata across decentralized meme
+						infrastructure. Web3-ready. Patent-pending technology
+						that definitely exists.
+					</p>
+					<button class="btn-outline full-width">
+						Try Premium — Free*
+					</button>
+				</div>
+
+				<div class="card feed-card">
+					<div class="feed-title">Add to your feed</div>
+
+					<div class="feed-item">
+						<div class="feed-avatar">🧑‍💻</div>
+						<div class="feed-info">
+							<div class="feed-name">Steve Huynh</div>
+							<div class="feed-sub">
+								I Help Tech Professionals Level Up Fast | …
+							</div>
+							<button class="follow-btn-outline">+ Follow</button>
+						</div>
+					</div>
+
+					<div class="feed-item">
+						<div class="feed-avatar">🏢</div>
+						<div class="feed-info">
+							<div class="feed-name">Cognifyz Technologies</div>
+							<div class="feed-sub">
+								Company · IT System Data Services
+							</div>
+							<button class="follow-btn-outline">+ Follow</button>
+						</div>
+					</div>
+
+					<div class="feed-item">
+						<div class="feed-avatar">👩‍⚕️</div>
+						<div class="feed-info">
+							<div class="feed-name">
+								Charlene Lacas RPsy, MT, …
+							</div>
+							<div class="feed-sub">
+								Psychologist · Chief Traumatologist · GC…
+							</div>
+							<button class="follow-btn-outline">+ Follow</button>
+						</div>
+					</div>
+				</div>
+			</aside>
+		</div>
+
+		<script>
+			// Scrolling word animation
+			(function () {
+				const words = Array.from(
+					document.querySelectorAll(".scroll-word"),
+				);
+				let current = 0;
+				function showWord(idx) {
+					words.forEach((w, i) =>
+						w.classList.toggle("visible", i === idx),
+					);
+				}
+				showWord(0);
+				setInterval(() => {
+					words[current].classList.remove("visible");
+					current = (current + 1) % words.length;
+					setTimeout(() => showWord(current), 50);
+				}, 2000);
+			})();
+
+			// Tabs
+			document.querySelectorAll(".tab-btn").forEach((btn) => {
+				btn.addEventListener("click", () => {
+					document
+						.querySelectorAll(".tab-btn")
+						.forEach((b) => b.classList.remove("active"));
+					document
+						.querySelectorAll(".panel")
+						.forEach((p) => p.classList.remove("active"));
+					btn.classList.add("active");
+					document
+						.getElementById("panel-" + btn.dataset.tab)
+						.classList.add("active");
+				});
+			});
+
+			// File handling + capacity check
+			const MAGIC = [0x52, 0x4d, 0x45, 0x4d];
+			const HEADER_BYTES = 8;
+			function fmt(n) {
+				if (n < 1024) return n + " B";
+				if (n < 1048576) return (n / 1024).toFixed(1) + " KB";
+				return (n / 1048576).toFixed(2) + " MB";
+			}
+
+			let imageFile = null,
+				pdfFile = null;
+
+			function updateCapacity() {
+				const cap = document.getElementById("capacity-display");
+				if (!imageFile) {
+					cap.style.display = "none";
+					return;
+				}
+				cap.style.display = "block";
+				const img = new Image();
+				img.onload = () => {
+					const av =
+						Math.floor((img.width * img.height * 3) / 8) -
+						HEADER_BYTES;
+					document.getElementById("cap-value").textContent = fmt(av);
+					URL.revokeObjectURL(img.src);
+				};
+				img.src = URL.createObjectURL(imageFile);
+			}
+
+			function checkReady() {
+				document.getElementById("btn-encode").disabled = !(
+					imageFile && pdfFile
+				);
+			}
+
+			document
+				.getElementById("input-image")
+				.addEventListener("change", (e) => {
+					const f = e.target.files[0];
+					if (!f) return;
+					imageFile = f;
+					document
+						.getElementById("zone-image")
+						.classList.add("has-file");
+					document.getElementById("hint-image").textContent = f.name;
+					updateCapacity();
+					checkReady();
+				});
+
+			document
+				.getElementById("input-pdf")
+				.addEventListener("change", (e) => {
+					const f = e.target.files[0];
+					if (!f) return;
+					pdfFile = f;
+					document
+						.getElementById("zone-pdf")
+						.classList.add("has-file");
+					document.getElementById("hint-pdf").textContent = f.name;
+					updateCapacity();
+					checkReady();
+				});
+
+			document
+				.getElementById("btn-encode")
+				.addEventListener("click", async () => {
+					const status = document.getElementById("enc-status");
+					const result = document.getElementById("enc-result");
+					const pw = document.getElementById("enc-progress-wrap");
+					const pb = document.getElementById("enc-progress-bar");
+					result.classList.remove("visible");
+					pb.style.width = "0%";
+					pw.classList.add("visible");
+					status.className = "status info";
+					status.textContent = "Reading files…";
+					document.getElementById("btn-encode").disabled = true;
+
+					try {
+						const pdfBytes = new Uint8Array(
+							await pdfFile.arrayBuffer(),
+						);
+						const header = new Uint8Array(HEADER_BYTES);
+						header[0] = MAGIC[0];
+						header[1] = MAGIC[1];
+						header[2] = MAGIC[2];
+						header[3] = MAGIC[3];
+						const len = pdfBytes.length;
+						header[4] = (len >> 24) & 0xff;
+						header[5] = (len >> 16) & 0xff;
+						header[6] = (len >> 8) & 0xff;
+						header[7] = len & 0xff;
+						const payload = new Uint8Array(HEADER_BYTES + len);
+						payload.set(header, 0);
+						payload.set(pdfBytes, HEADER_BYTES);
+
+						const img = await new Promise((res, rej) => {
+							const i = new Image();
+							i.onload = () => res(i);
+							i.onerror = () =>
+								rej(new Error("Could not load image"));
+							i.src = URL.createObjectURL(imageFile);
+						});
+
+						const canvas = document.createElement("canvas");
+						canvas.width = img.width;
+						canvas.height = img.height;
+						const ctx = canvas.getContext("2d");
+						ctx.drawImage(img, 0, 0);
+						URL.revokeObjectURL(img.src);
+						const imageData = ctx.getImageData(
+							0,
+							0,
+							canvas.width,
+							canvas.height,
+						);
+						const pixels = imageData.data;
+						const avBits = Math.floor((pixels.length / 4) * 3);
+						if (payload.length * 8 > avBits)
+							throw new Error("Image too small for this PDF.");
+
+						status.textContent = "Embedding…";
+						pb.style.width = "40%";
+						await new Promise((r) => setTimeout(r, 0));
+
+						let bi = 0,
+							pp = 0;
+						const tb = payload.length * 8;
+						while (bi < tb) {
+							while (pp % 4 === 3) pp++;
+							const byte = Math.floor(bi / 8),
+								bit = 7 - (bi % 8);
+							pixels[pp] =
+								(pixels[pp] & 0xfe) |
+								((payload[byte] >> bit) & 1);
+							bi++;
+							pp++;
+						}
+
+						pb.style.width = "90%";
+						ctx.putImageData(imageData, 0, 0);
+						const dataURL = canvas.toDataURL("image/png");
+						pb.style.width = "100%";
+						document.getElementById("enc-output-img").src = dataURL;
+						document.getElementById("btn-download-enc").onclick =
+							() => {
+								const a = document.createElement("a");
+								a.href = dataURL;
+								a.download = "resume-meme.png";
+								a.click();
+							};
+						result.classList.add("visible");
+						status.className = "status success";
+						status.textContent =
+							"Done. Save as PNG — never recompress.";
+					} catch (err) {
+						status.className = "status error";
+						status.textContent = err.message;
+						pw.classList.remove("visible");
+					} finally {
+						document.getElementById("btn-encode").disabled = false;
+					}
+				});
+
+			let decodeFile = null;
+			document
+				.getElementById("input-decode")
+				.addEventListener("change", (e) => {
+					const f = e.target.files[0];
+					if (!f) return;
+					decodeFile = f;
+					document
+						.getElementById("zone-decode")
+						.classList.add("has-file");
+					document.getElementById("hint-decode").textContent = f.name;
+					document.getElementById("btn-decode").disabled = false;
+				});
+
+			document
+				.getElementById("btn-decode")
+				.addEventListener("click", async () => {
+					const status = document.getElementById("dec-status");
+					const pw = document.getElementById("dec-progress-wrap");
+					const pb = document.getElementById("dec-progress-bar");
+					pb.style.width = "0%";
+					pw.classList.add("visible");
+					status.className = "status info";
+					status.textContent = "Loading image…";
+					document.getElementById("btn-decode").disabled = true;
+
+					try {
+						const img = await new Promise((res, rej) => {
+							const i = new Image();
+							i.onload = () => res(i);
+							i.onerror = () =>
+								rej(new Error("Could not load image"));
+							i.src = URL.createObjectURL(decodeFile);
+						});
+						const canvas = document.createElement("canvas");
+						canvas.width = img.width;
+						canvas.height = img.height;
+						const ctx = canvas.getContext("2d");
+						ctx.drawImage(img, 0, 0);
+						URL.revokeObjectURL(img.src);
+						const pixels = ctx.getImageData(
+							0,
+							0,
+							canvas.width,
+							canvas.height,
+						).data;
+
+						pb.style.width = "30%";
+
+						function extractBytes(pd, byteOffset, count) {
+							const out = new Uint8Array(count);
+							for (let i = 0; i < count; i++) {
+								let byte = 0;
+								for (let b = 0; b < 8; b++) {
+									const gb = (byteOffset + i) * 8 + b,
+										p = Math.floor(gb / 3),
+										ch = gb % 3;
+									byte = (byte << 1) | (pd[p * 4 + ch] & 1);
+								}
+								out[i] = byte;
+							}
+							return out;
+						}
+
+						const header = extractBytes(pixels, 0, HEADER_BYTES);
+						const magic = String.fromCharCode(
+							header[0],
+							header[1],
+							header[2],
+							header[3],
+						);
+						if (magic !== "RMEM")
+							throw new Error("No resume found in this image.");
+						const length =
+							(header[4] << 24) |
+							(header[5] << 16) |
+							(header[6] << 8) |
+							header[7];
+						if (length <= 0 || length > 50 * 1024 * 1024)
+							throw new Error("Corrupted header.");
+
+						pb.style.width = "60%";
+						const pdfBytes = extractBytes(
+							pixels,
+							HEADER_BYTES,
+							length,
+						);
+						pb.style.width = "100%";
+
+						if (pdfBytes[0] !== 0x25 || pdfBytes[1] !== 0x50)
+							throw new Error(
+								"Extracted data is not a valid PDF.",
+							);
+
+						const blob = new Blob([pdfBytes], {
+							type: "application/pdf",
+						});
+						const url = URL.createObjectURL(blob);
+						const a = document.createElement("a");
+						a.href = url;
+						a.download = "extracted-resume.pdf";
+						a.click();
+						setTimeout(() => URL.revokeObjectURL(url), 10000);
+						status.className = "status success";
+						status.textContent = "Resume extracted successfully.";
+					} catch (err) {
+						status.className = "status error";
+						status.textContent = err.message;
+						pw.classList.remove("visible");
+					} finally {
+						document.getElementById("btn-decode").disabled = false;
+					}
+				});
+		</script>
+	</body>
+</html>
