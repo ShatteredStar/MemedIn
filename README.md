@@ -103,6 +103,29 @@ Most one-page resume PDFs are under 500 KB, so a standard 1080p image is plenty.
 
 ---
 
+## Future Plans
+
+### 🔊 Audio Embedding ("Roast Mode")
+
+The next planned feature follows the same steganography concept but with audio as the carrier.
+
+**How it'll work:**
+
+1. You upload your resume PDF
+2. An AI generates a spoken roast of your resume — reading your experience back to you with the energy it deserves
+3. Your actual resume PDF is embedded into the least-significant bits of the audio file's **PCM samples**, the same way it's currently hidden in image pixels
+4. You receive a `.wav` file that plays a perfectly normal (devastating) roast when opened in any audio player — but contains your full resume hidden inside
+
+**Why WAV:**  
+Like PNG, WAV stores uncompressed audio (PCM), so the LSB data survives intact. MP3 or AAC would destroy it, same as JPEG destroys image steganography.
+
+**The pitch:**  
+Send the roast to a recruiter. They get a laugh. They also unknowingly have your resume. It is simultaneously the worst and most efficient cover letter format ever conceived.
+
+> *Status: planned. The bit pipeline is already proven — it's just a new carrier medium.*
+
+---
+
 ## License
 
 Do whatever you want with it. It's a bit.
