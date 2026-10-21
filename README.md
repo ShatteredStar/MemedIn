@@ -8,8 +8,6 @@ MemedIn is a web application that encodes your PDF resume into any image using s
 
 Send it anywhere. When someone needs your resume, they decode the image and extract the PDF.
 
-**Why?** Because it's completely unnecessary and over-engineered for a non-problem. That's the entire point.
-
 ## How It Works
 
 **Encode:** Resume PDF + Cover Image → PNG with hidden resume  
@@ -23,17 +21,9 @@ The data is embedded in the least significant bits (LSBs) of pixel color channel
 - [ ] **DFT-based encoding** — Frequency-domain steganography for better robustness
 - [ ] **Audio steganography** — Embed resumes in MP3s (with AI-generated roasts)
 - [ ] **Capacity optimization** — Support larger files with adaptive encoding
-- [ ] **Batch processing** — Encode multiple resumes at once
-- [ ] **Web3 integration** — Because everything needs blockchain (optional, mostly a joke)
-- [ ] **Mobile app** — iOS/Android version for memeing on the go
+- [ ] **Batch processing** — Encode multiple resumes at once\
 - [ ] **Share directly** — Generate shareable links with embedded resumes
 
-## Tech Stack
-
-- **Frontend:** HTML + CSS + Vanilla JavaScript
-- **Steganography:** LSB encoding (JavaScript canvas API)
-- **Image processing:** Canvas getImageData / putImageData
-- **File handling:** Blob API, ArrayBuffer
 
 ## Why This Exists
 
@@ -43,4 +33,4 @@ MemedIn is exactly that — unnecessary, over-engineered, completely impractical
 
 ---
 
-*MemedIn™ — Your career, disrupted.*
+*MemedIn™ — We didn't reinvent the wheel. We vibe coded it.*
